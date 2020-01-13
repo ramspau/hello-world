@@ -17,10 +17,7 @@ steps:
     echo Hello MSCI.
     echo Working with Azure Pipelines
   displayName: 'Run a multi-line script'
-
-- script: hello.sh
-  displayName: 'Run hello script'
-
-- task: BashScript@3
+- task: Bash@3
   inputs:
     filePath: 'hello.sh'
+
